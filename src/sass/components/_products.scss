@@ -84,6 +84,11 @@
   &.milk {
     background-color: #c2e297;
   }
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-top: 130px;
+    }
+  }
 }
 .cream::before {
   content: '';
@@ -94,11 +99,47 @@
   background-image: url('../images/products/icecream-mobile1@1x.png');
   width: 250px;
   height: 250px;
-  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //     background-image: url('../images/products/icecream-mobile1@2x.png');
-  //   }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/icecream-mobile1@2x.png');
+  }
+}
+.coffee::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(6%, -45%);
+  background-image: url('../images/products/icecream-mobile2@1x.png');
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/icecream-mobile2@2x.png');
+  }
+}
+.milk::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(6%, -45%);
+  background-image: url('../images/products/icecream-mobile3@1x.png');
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/products/icecream-mobile3@2x.png');
+  }
 }
 .products-item__name {
+  position: relative;
   margin-top: 161px;
   margin-bottom: 66px;
   font-family: Titan One;
@@ -115,8 +156,19 @@
     line-height: 1.13;
   }
 }
+.products-item__name::after {
+  content: '...';
+  display: block;
+  position: absolute;
+  width: 26px;
+  height: 6px;
+  top: 170%;
+  left: 45%;
+}
 .product-item__description {
   display: block;
+  margin-top: 0;
+  margin-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
   font-family: DM Sans;
@@ -133,5 +185,27 @@
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.75;
+  }
+}
+.products__link {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.products__icon {
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  fill: #d41443;
+  &:hover {
+    background-color: #d41443;
+    fill: #fff;
+  }
+  &:focus {
+    background-color: #d41443;
+    fill: #fff;
   }
 }
