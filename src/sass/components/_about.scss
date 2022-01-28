@@ -85,6 +85,11 @@
   background-color: #fff;
   border-radius: 22px;
   margin-top: 27px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .about__svg {
