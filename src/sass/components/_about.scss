@@ -1,0 +1,47 @@
+.about__title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.about__label {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.about__paragraph {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #907e82;
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  width: 176px;
+  height: 44px;
+  color: #d41443;
+  background-color: #fff;
+  border-radius: 22px;
+}
+
+.about__svg {
+  margin-left: 14px;
+}
