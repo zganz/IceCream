@@ -8,12 +8,17 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
-    font-style: normal;
-  }
+  font-style: normal;
+}
 
-  h1,h2,h3,h4,h5,h6{
-    font-family: 'Titan One', cursive;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Titan One', cursive;
+}
 
 a {
   text-decoration: none;
@@ -30,8 +35,26 @@ ul li {
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.container {
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
