@@ -1,0 +1,137 @@
+.products-section {
+  margin-top: 0;
+  background-color: #fff;
+  @media screen and (max-width: 767px) {
+    padding-top: 121px;
+    padding-bottom: 98px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+  & .container {
+    background-color: #fff;
+  }
+}
+
+.products-section__title {
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #d41443;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 143px;
+    font-size: 34px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 39px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 49px;
+    font-size: 58px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+  }
+}
+.products-section__text {
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  font-family: Titan One;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+.products-section__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.products-section__item {
+  position: relative;
+  max-width: 280px;
+  border-radius: 24px;
+  &.cream {
+    background-color: #ffb8ca;
+  }
+  &.coffee {
+    background-color: #f0d1a5;
+  }
+  &.milk {
+    background-color: #c2e297;
+  }
+}
+.cream::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(6%, -45%);
+  background-image: url('../images/products/icecream-mobile1@1x.png');
+  width: 250px;
+  height: 250px;
+  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //     background-image: url('../images/products/icecream-mobile1@2x.png');
+  //   }
+}
+.products-item__name {
+  margin-top: 161px;
+  margin-bottom: 66px;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+.product-item__description {
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    line-height: 1.78;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
