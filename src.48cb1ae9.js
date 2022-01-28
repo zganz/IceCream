@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/products/icecream-mobile1@1x.png":[["icecream-mobile1@1x.5660827e.png","aniL"],"aniL"],"./../images/products/icecream-mobile1@2x.png":[["icecream-mobile1@2x.10633778.png","wrzZ"],"wrzZ"],"./../images/products/icecream-mobile2@1x.png":[["icecream-mobile2@1x.d1ba565d.png","e99h"],"e99h"],"./../images/products/icecream-mobile2@2x.png":[["icecream-mobile2@2x.2446b414.png","X0w0"],"X0w0"],"./../images/products/icecream-mobile3@1x.png":[["icecream-mobile3@1x.b4c81675.png","OrCe"],"OrCe"],"./../images/products/icecream-mobile3@2x.png":[["icecream-mobile3@2x.d6ba41b2.png","d8br"],"d8br"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/IceCream/src.07442954.js.map
+//# sourceMappingURL=/IceCream/src.48cb1ae9.js.map
