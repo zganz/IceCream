@@ -1,7 +1,13 @@
 .advantages-section {
   background-color: var(--sec-color);
-  padding-bottom: 145px;
+  padding-bottom: 97px;
   padding-top: 39px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 136px;
+    padding-top: 66px;
+    padding-left: 16px;
+  }
 }
 
 .advantages-section__paragraph {
@@ -15,9 +21,14 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  margin-bottom: 10px;
+
   color: var(--active-color);
-  min-width: 98px;
-  min-height: 56px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
 }
 
 .advantages-section__text {
@@ -28,13 +39,41 @@
   line-height: 1.7;
 
   color: var(--black-color);
-  min-width: 230px;
-  min-height: 36px;
+  //   min-width: 230px;
+  //   min-height: 36px;
+
+  //   margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+.advantages-section__box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.advantages-section__item {
+  max-width: 230px;
+  max-height: 156px;
+  @media screen and (min-width: 768px) {
+  }
+}
+
+.advantages-section__item--indentation {
+  margin-bottom: 40px;
+}
+
+.advantages-section__item--indentation-second {
+  margin-bottom: 36px;
 }
 
 .advantages-section__item--cream::before {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   content: '';
   background-image: url('../images/advantages/icon1-advantages-@1x.png');
   width: 33px;
@@ -50,7 +89,8 @@
 
 .advantages-section__item--apple::before {
   display: inline-block;
-  margin-bottom: 16px;
+
+  margin-bottom: 12px;
   content: '';
   background-image: url('../images/advantages/icon2-advantages-@1x.png');
   width: 50px;
@@ -62,12 +102,16 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/advantages/icon2-advantages-@2x.png');
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
 }
 
 .advantages-section__item--candy::before {
   display: inline-block;
 
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   content: '';
   background-image: url('../images/advantages/icon3-advantages-@1x.png');
   width: 44px;
@@ -78,5 +122,9 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/advantages/icon3-advantages-@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
   }
 }
