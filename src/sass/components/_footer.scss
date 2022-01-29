@@ -1,0 +1,52 @@
+.footer-text {
+  font-family: Titan One, cursive;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.footer-text-accent {
+  font-size: 58px;
+  letter-spacing: 0.06em;
+  color: #d41443;
+}
+
+.footer-socials {
+  display: flex;
+}
+
+.footer-socials-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+.footer-icon {
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+}
+.footer-icon-mobile {
+  @media screen and (max-width: 767px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.footer-contact-link {
+  color: #d41443;
+}
