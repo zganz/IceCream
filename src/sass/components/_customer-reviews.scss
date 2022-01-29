@@ -25,7 +25,8 @@
   position: relative;
 
   &::before {
-    content: '&ldquoт;';
+    content: '...';
+    font-family: $main-font;
     display: inline-block;
     position: absolute;
     font-size: 54px;
@@ -34,7 +35,6 @@
     height: 40px;
     left: 2px;
     top: 6px;
-    background: violet;
 
     // background-image: url(./src/images/quotes.jpg);
     transform: rotate(-180deg);
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1090px;
   }
@@ -90,14 +90,60 @@
   }
 }
 
+.div-title {
+  position: relative;
+}
+
+.title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 52px;
+
+  &::before {
+    content: '...';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 6px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 216%;
+    letter-spacing: 0.04em;
+    margin-bottom: 35px;
+    margin-top: 42px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    margin-top: 34px;
+  }
+}
+
 .swiper-slide img {
   display: block;
   width: 85px;
   object-fit: cover;
-  padding-top: 123px;
-  padding-bottom: 15px;
+  margin-top: 80px;
+  margin-bottom: 29px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 768px) {
+    margin-top: 121px;
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 123px;
+    margin-bottom: 15px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -106,6 +152,7 @@
   border-radius: unset;
   width: 20px;
   height: 20px;
+  margin-bottom: 86px;
 }
 
 .swiper-img {
