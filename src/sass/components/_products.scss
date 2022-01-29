@@ -1,6 +1,6 @@
 .products-section {
   margin-top: 0;
-  background-color: #fff;
+  background-color: $white-color;
   @media screen and (max-width: 767px) {
     padding-top: 121px;
     padding-bottom: 98px;
@@ -21,7 +21,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   font-weight: 400;
-  color: #d41443;
+  color: $active-color;
   @media screen and (max-width: 767px) {
     margin-bottom: 143px;
     font-size: 34px;
@@ -45,8 +45,8 @@
   display: block;
   text-align: center;
   text-transform: uppercase;
-  color: #ffa5ba;
-  font-family: Titan One;
+  color: $icon-color;
+  font-family: $main-font;
   @media screen and (max-width: 767px) {
     font-size: 18px;
     line-height: 1.17;
@@ -86,7 +86,7 @@
   position: relative;
   border-radius: 24px;
   &.cream {
-    background-color: #ffb8ca;
+    background-color: $main-color;
   }
   &.coffee {
     background-color: #f0d1a5;
@@ -276,7 +276,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white-color;
   @media screen and (min-width: 768px) {
     margin-top: 145px;
   }
@@ -306,14 +306,13 @@
   margin-bottom: 30px;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: DM Sans;
-  font-style: normal;
+  font-family: $second-font;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: $white-color;
   @media screen and (min-width: 768px) {
     line-height: 1.78;
     padding-left: 11px;
@@ -338,8 +337,8 @@
   height: 40px;
   margin: auto;
   border-radius: 50%;
-  background-color: #fff;
-  color: #d41443;
+  background-color: $white-color;
+  color: $active-color;
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
@@ -348,8 +347,8 @@
   }
   &:hover,
   &:focus {
-    background-color: #d41443;
-    color: #fff;
+    background-color: $active-color;
+    color: $white-color;
   }
 }
 .products__icon {
@@ -420,7 +419,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffb8ca;
+    background-color: $main-color;
     pointer-events: none;
     opacity: 0;
     transform: translateY(0);
