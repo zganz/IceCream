@@ -57,6 +57,7 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
+    margin-bottom: 55px;
   }
 }
 
@@ -121,7 +122,7 @@
   align-items: center;
   justify-content: center;
   border: none;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   width: 176px;
   height: 44px;
@@ -137,6 +138,11 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 62px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 45px;
   }
 }
 
@@ -176,5 +182,6 @@
 
   @media screen and (min-width: 1280px) {
     margin-left: 74px;
+    padding: 0;
   }
 }
