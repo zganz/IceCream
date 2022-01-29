@@ -1,0 +1,189 @@
+.about {
+  background-color: #fff5f6;
+  padding-top: 125px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+  }
+}
+
+.about__container {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
+}
+
+.about__background {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0 bottom 60px;
+    background-image: url(../images/about/milk-phone.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-phone@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 11%;
+    background-image: url(../images/about/milk-desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milk-desktop@2x.png);
+    }
+  }
+}
+
+.about__title {
+  text-align: center;
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    margin-bottom: 55px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.about__label {
+  text-align: center;
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+
+.about__paragraph {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #000000;
+  margin-top: 46px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(25 / 14);
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #907e82;
+
+  @media screen and (min-width: 767px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__text + .about__text {
+  margin-top: 15px;
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  width: 176px;
+  height: 44px;
+  color: #d41443;
+  background-color: #fff;
+  border-radius: 22px;
+  margin-top: 27px;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 45px;
+  }
+}
+
+.about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__svg {
+  margin-left: 14px;
+}
+
+.about__image {
+  @media screen and (max-width: 767px) {
+    max-width: 280px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 516px;
+    max-width: 516px;
+  }
+}
+
+.about__thumb {
+  padding: 0px 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 340px;
+    padding: 0;
+    margin-left: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 74px;
+    padding: 0;
+  }
+}
