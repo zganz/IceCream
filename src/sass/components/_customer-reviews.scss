@@ -1,24 +1,103 @@
-.swiper {
-  width: 100%;
-  height: 100%;
+// .swiper {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+// }
+
+.container {
+  padding: 0 20px;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+.slider-text-wrapper {
+  background-color: #fafafa;
+  padding: 44px 50px 16px;
+  margin: 0 20px;
+}
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  padding: 0 18px;
+  background-image: repeating-linear-gradient(to top, #e1e1e1 0px 1px, transparent 1px 31px);
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: '&ldquoт;';
+    display: inline-block;
+    position: absolute;
+    font-size: 54px;
+    line-height: 1.86;
+    width: 54px;
+    height: 40px;
+    left: 2px;
+    top: 6px;
+    background: violet;
+
+    // background-image: url(./src/images/quotes.jpg);
+    transform: rotate(-180deg);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+
+  .slider {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .slider-text-wrapper {
+    padding: 47px 60px 27px;
+    margin: 0 74px;
+  }
+
+  .slider-text {
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+    padding: 0 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1090px;
+  }
+
+  .slider {
+    width: 926px;
+  }
+
+  .slider-text {
+    font-size: 16px;
+    line-height: 1.86;
+    padding: 0 4px;
+  }
+  .slider-text-wrapper {
+    width: 926px;
+  }
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 85px;
   object-fit: cover;
+  padding-top: 123px;
+  padding-bottom: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .swiper-pagination-bullet-active {
@@ -27,4 +106,8 @@
   border-radius: unset;
   width: 20px;
   height: 20px;
+}
+
+.swiper-img {
+  padding: 0 auto;
 }
