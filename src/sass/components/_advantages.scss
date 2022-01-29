@@ -1,5 +1,5 @@
 .advantages-section {
-  background-color: var(--sec-color);
+  background-color: $sec-color;
   padding-bottom: 97px;
   padding-top: 39px;
 
@@ -18,7 +18,7 @@
 .advantages-section__paragraph {
   display: block;
 
-  font-family: Titan One, sans-serif;
+  font-family: $main-font;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -28,7 +28,7 @@
 
   margin-bottom: 10px;
 
-  color: var(--active-color);
+  color: $active-color;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -43,14 +43,14 @@
 }
 
 .advantages-section__text {
-  font-family: DM Sans;
+  font-family: $second-font;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.04em;
 
-  color: var(--black-color);
+  color: $black-color;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
