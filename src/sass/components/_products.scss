@@ -379,6 +379,12 @@
   left: 0%;
   transform: translate(-40%, -120%);
   pointer-events: none;
+  @media screen and (max-width: 767px) {
+    width: 220px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 260px;
+  }
   &.ice__box::after {
     content: '';
     position: absolute;
