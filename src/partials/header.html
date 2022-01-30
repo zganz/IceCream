@@ -1,3 +1,55 @@
 <header class="header">
-    <h1>Hello!</h1>
+    <div class="container  ">
+        <div class="header__container">
+            <div class="logo">
+                <img srcset="./images/header/logo_1x.png 1x, ./images/header/logo_2x.png 2x" src="./images/header/logo_1x.png"
+                    alt="logo" class="logo__img">
+                <p class="logo__text">icecream</p>
+            </div>
+            
+            <div class="mobile__menu is-hidden" data-menu>
+                <button type="button" class="menu__button menu__close" data-menu-close>
+                    <svg class="menu__icon--close" width='30px' height='30px' aria-label="Переключатель мобильного меню">
+                        <use href=" ./images/icons.svg#icon-close" class="menu__close"></use>
+                    </svg>
+                </button>
+                <button type="button" class="button__buy button__buy--menu">Buy now</button>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__items">
+                            <a href="#" class="nav__link home">Home</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__link">About us</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__link">How it’s made?</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__link">Our products</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            
+            </div>
+            <button type="button" class="menu__button" data-menu-open>
+                <svg class="menu__icon" width='30' height='30' aria-label="Переключатель мобильного меню">
+                    <use href=" ./images/icons.svg#icon-menu" class="menu__open"></use>
+            
+                </svg>
+            </button>
+            <button type="button" class="button__buy button__buy--tablet">Buy now</button>
+        </div>
+
+        
+
+    </div>
+
+
+
+
+
 </header>

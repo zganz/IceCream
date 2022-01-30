@@ -1,15 +1,36 @@
 .footer-section {
-  background-color: #fff5f6;
+  position: relative;
+  background-color: $sec-color;
   background-image: linear-gradient(rgba(255, 245, 246, 1), rgba(255, 245, 246, 1));
 }
 .footer-container {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 89px;
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    @media screen and (min-width: 768px) {
+      bottom: 73px;
+    }
+    @media screen and (min-width: 1280px) {
+      bottom: 45px;
+    }
+  }
+}
+
+.footer-content {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
-.footer-content {
+.footer-title {
   margin-bottom: 43px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 91px;
   }
@@ -19,19 +40,25 @@
 }
 .footer-text {
   display: inline-block;
-  margin-right: 16%;
+  padding-right: 16%;
+  padding-bottom: 17px;
+
   font-family: Titan One, cursive;
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: $icon-color;
   @media screen and (min-width: 768px) {
+    padding-bottom: 16px;
+
     font-size: 26px;
     line-height: 1.15;
     letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
+    padding-right: 0;
+    padding-bottom: 15px;
     font-size: 30px;
     line-height: 1.13;
   }
@@ -43,7 +70,7 @@
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  color: #d41443;
+  color: $active-color;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -53,13 +80,29 @@
   @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
+    padding-right: 0;
+  }
+}
+
+.footer-contacts {
+  margin-left: auto;
+  max-width: 230px;
+  @media screen and (min-width: 768px) {
+    max-width: 268px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 319px;
   }
 }
 
 .footer-socials {
   display: flex;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    padding-left: 45%;
+  padding-left: 33%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 30%;
   }
   margin-bottom: 46px;
 }
@@ -96,8 +139,16 @@
   width: 100%;
   height: 100%;
   background-color: #fea5bb;
-  fill: #ffffff;
+  fill: $white-color;
   border-radius: 50px;
+
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    border-radius: 50px;
+  }
 }
 .footer-icon {
   @media screen and (min-width: 768px) {
@@ -115,22 +166,47 @@
 
 .footer-contact {
   margin-bottom: 43px;
+
   font-weight: bold;
   font-size: 12px;
   line-height: 1.9;
   text-align: right;
 
-  color: #000000;
+  color: $black-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 .footer-contact-link {
-  color: #d41443;
+  color: $active-color;
 }
 
+.copy-box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .footer-copyrights {
   max-width: 150px;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.52;
+  line-height: 1.86;
   text-align: center;
-  color: #907e82;
+  color: $text-color;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
+
+  @media screen and (min-width: 780px) {
+    max-width: 294px;
+    line-height: 1.52;
+  }
 }
