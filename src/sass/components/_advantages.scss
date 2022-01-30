@@ -1,24 +1,25 @@
 .advantages-section {
   background-color: $sec-color;
-  padding-bottom: 97px;
-  padding-top: 39px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 136px;
-    padding-top: 66px;
-    padding-left: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 39px;
-    padding-bottom: 139px;
-    padding-left: 95px;
-  }
 }
 
 .advantages-container {
   @media screen and (max-width: 479px) {
     width: 100%;
   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 136px;
+    padding-top: 66px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 39px;
+    padding-bottom: 139px;
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+  padding-bottom: 97px;
+  padding-top: 39px;
 }
 
 .advantages-section__paragraph {
@@ -73,7 +74,7 @@
 .advantages-section__box {
   @media screen and (min-width: 768px) {
     display: flex;
-    // justify-content: center;
+    // justify-content: row;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
