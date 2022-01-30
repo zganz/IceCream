@@ -30,6 +30,9 @@
 }
 .footer-title {
   margin-bottom: 43px;
+  @media screen and (max-width: 767px) {
+    max-width: 234px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 91px;
@@ -40,7 +43,7 @@
 }
 .footer-text {
   display: inline-block;
-  padding-right: 16%;
+
   padding-bottom: 17px;
 
   font-family: Titan One, cursive;
@@ -50,6 +53,7 @@
 
   color: $icon-color;
   @media screen and (min-width: 768px) {
+    padding-right: 16%;
     padding-bottom: 16px;
 
     font-size: 26px;
