@@ -1,7 +1,6 @@
-// .swiper {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
+// .slider {
+//   position: relative;
+
 // }
 
 .container {
@@ -12,6 +11,28 @@
   background-color: #fafafa;
   padding: 44px 50px 16px;
   margin: 0 20px;
+  position: relative;
+  &::before {
+    content: '...';
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 16px;
+    left: 48%;
+    top: 105%;
+    color: $active-color;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      top: 102%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 41%;
+    }
+  }
 }
 
 .slider-text {
@@ -89,29 +110,6 @@
   margin-bottom: 30px;
   margin-top: 52px;
   position: relative;
-
-  &::before {
-    content: '...';
-    display: block;
-    position: absolute;
-    width: 26px;
-    height: 16px;
-    left: 48%;
-    top: -150%;
-    color: $active-color;
-    font-size: 30px;
-    letter-spacing: 0.1em;
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-      top: -112%;
-    }
-
-    @media screen and (min-width: 1280px) {
-      top: -90%;
-      left: 49%;
-    }
-  }
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
