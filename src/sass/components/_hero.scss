@@ -1,5 +1,5 @@
 .hero {
-  background-color: #ffb8ca;
+  background-color: $main-color;
   &.menu-is-open {
     pointer-events: none;
   }
@@ -7,6 +7,7 @@
 .container__hero {
   padding: 193px 82px 160px 20px;
   position: relative;
+  overflow: hidden;
   @media (min-width: 768px) {
     padding: 102px 34px 27px 34px;
   }
@@ -22,7 +23,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $white-color;
   @media (min-width: 768px) {
     font-size: 22px;
   }
@@ -35,7 +36,7 @@
   line-height: 0.965;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $active-color;
   @media (min-width: 768px) {
     font-size: 34px;
     line-height: 0.905;
@@ -49,7 +50,7 @@
   margin-top: 19px;
   padding: 8px 15px;
 
-  font-family: DM Sans;
+  font-family: $second-font;
   font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
@@ -67,8 +68,8 @@
   }
 }
 .hero__link--products {
-  color: #ffffff;
-  background-color: #d41443;
+  color: $white-color;
+  background-color: $active-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -79,8 +80,8 @@
 .hero__link--howMade {
   margin-left: 8px;
   cursor: pointer;
-  color: #d41443;
-  background-color: #ffffff;
+  color: $active-color;
+  background-color: $white-color;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -103,7 +104,7 @@
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background-color: #ffa5ba;
+  background-color: $icon-color;
 
   position: absolute;
   top: 83px;
@@ -155,7 +156,7 @@
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: $white-color;
 
     position: absolute;
     top: 0%;
@@ -169,7 +170,7 @@
   }
 
   .items__rate {
-    font-family: Titan One;
+    font-family: $main-font;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;
@@ -177,7 +178,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: $active-color;
     position: relative;
     z-index: 2;
     @media (min-width: 1280px) {
@@ -186,12 +187,12 @@
   }
 }
 .items__rank {
-  font-family: DM Sans;
+  font-family: $second-font;
   font-style: normal;
   font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
-  color: #ffffff;
+  color: $white-color;
   @media (min-width: 1280px) {
     font-size: 14px;
   }
@@ -233,12 +234,13 @@
     width: 114px;
     height: 48px;
     overflow: hidden;
-    font-family: DM Sans;
+
+    font-family: $second-font;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
     line-height: 1.5;
-    color: #ffffff;
+    color: $white-color;
   }
   @media (min-width: 1280px) {
     width: 200px;
@@ -258,13 +260,13 @@
     margin-top: 7px;
     margin-left: 120px;
     border-radius: 50%;
-    background-color: #ffffff;
-    color: #d41443;
+    background-color: $white-color;
+    color: $active-color;
     cursor: pointer;
     &:hover,
     &:focus {
-      background-color: #d41443;
-      color: #fff;
+      background-color: $active-color;
+      color: $white-color;
     }
   }
   @media (min-width: 1280px) {
