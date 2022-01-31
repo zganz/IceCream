@@ -1959,14 +1959,14 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .customer__reviews {
     width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .customer__reviews {
     width: 740px;
   }
   .slider {
@@ -1986,7 +1986,7 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .customer__reviews {
     width: 1090px;
   }
   .slider {
@@ -2075,6 +2075,7 @@ img {
   width: 54px;
   height: 40px;
   z-index: 2;
+  background-image: url("../images/quotes.svg");
 }
 
 @media screen and (min-width: 768px) {
