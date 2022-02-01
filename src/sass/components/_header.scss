@@ -22,6 +22,7 @@ body {
   margin-top: 6px;
   display: flex;
   align-items: center;
+  cursor: pointer;
   @media (min-width: 1280px) {
     padding-right: 50px;
     margin-right: 110px;
@@ -49,8 +50,8 @@ body {
     margin-top: 38px;
   }
   @media (min-width: 1280px) {
-    margin-left: 22px;
-    margin-right: 89px;
+    padding-left: 22px;
+    padding-right: 89px;
   }
 }
 .menu__button {
@@ -85,7 +86,7 @@ body {
     left: 0;
     z-index: 5;
     width: 100vw;
-    height: 100vh;
+    height: 502px;
     padding-top: 23px;
     animation: translateOn 500ms;
 
@@ -93,12 +94,13 @@ body {
     &.is-hidden {
       display: none;
     }
-    @media (max-width: 767px) and (orientation: landscape) {
-      height: 502px;
-    }
+    // @media (max-width: 767px) and (orientation: landscape) {
+    //   height: 502px;
+    // }
     @media (min-width: 768px) {
       left: 60%;
       width: 40vw;
+      height: 1020px;
     }
   }
   @media (min-width: 1280px) {
@@ -122,8 +124,8 @@ body {
 }
 .button__buy {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   border-radius: 22px;
   background-color: $white-color;
@@ -183,8 +185,8 @@ body {
 }
 .nav__items {
   @media (max-width: 1279px) {
-    padding-top: 14px;
-    padding-bottom: 14px;
+    // padding-top: 14px;
+    // padding-bottom: 14px;
     padding-left: 20px;
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
@@ -196,14 +198,17 @@ body {
   }
 }
 .nav__link {
+  display: block;
   font-family: DM Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.28;
+  padding-top: 14px;
+  padding-bottom: 14px;
 
   color: $white-color;
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $active-color;
