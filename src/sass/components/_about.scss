@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   background-color: #fff5f6;
   padding-top: 125px;
 
@@ -86,7 +87,6 @@
   font-size: 12px;
   line-height: 1.6;
   color: #000000;
-  margin-top: 46px;
   margin-bottom: 40px;
 
   @media screen and (min-width: 767px) {
@@ -132,6 +132,7 @@
   background-color: #fff;
   border-radius: 22px;
   margin-top: 27px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -184,6 +185,90 @@
 
   @media screen and (min-width: 1280px) {
     margin-left: 74px;
+    margin-top: 46px;
     padding: 0;
+  }
+}
+
+.blur {
+  position: relative;
+}
+
+.about__modal {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 600px;
+  border: 3px solid #ffa5ba;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.about__modal-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ffa5ba;
+}
+
+.about__modal-text {
+  line-height: 1.5;
+}
+
+.about__modal-button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 50px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+  color: #d41443;
+  border: 1px solid #d41443;
+  border-radius: 30px;
+  &:hover {
+    border: 1px solid transparent;
+    background: #d41443
+      url(https://i.postimg.cc/sX4Lg5sv/imgonline-com-ua-Replace-color-Wo21t-EQNFwr-NSk-U.png);
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: animate 250ms steps(8) forwards;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      color: #fff;
+      background-position-y: -480px;
+    }
+  }
+}
+
+.about__blur {
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1280px) {
+  .about__blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .about__modal.active {
+    opacity: 1;
+    visibility: visible;
   }
 }
