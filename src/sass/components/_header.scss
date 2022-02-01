@@ -19,7 +19,6 @@ body {
   z-index: 4;
 }
 .logo {
-  margin-top: 6px;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -43,20 +42,23 @@ body {
   display: flex;
 
   align-items: center;
+  padding-top: 6px;
   @media (max-width: 767px) {
     justify-content: space-between;
   }
   @media (min-width: 768px) {
-    margin-top: 38px;
+    padding-top: 38px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media (min-width: 1280px) {
-    padding-left: 22px;
-    padding-right: 89px;
+    padding-left: 46px;
+    padding-right: 115px;
   }
 }
 .menu__button {
   width: 30px;
-  height: 25px;
+  height: 30px;
   background-color: transparent;
   cursor: pointer;
   @media (min-width: 768px) {
@@ -94,9 +96,7 @@ body {
     &.is-hidden {
       display: none;
     }
-    // @media (max-width: 767px) and (orientation: landscape) {
-    //   height: 502px;
-    // }
+
     @media (min-width: 768px) {
       left: 60%;
       width: 40vw;
@@ -185,8 +185,6 @@ body {
 }
 .nav__items {
   @media (max-width: 1279px) {
-    // padding-top: 14px;
-    // padding-bottom: 14px;
     padding-left: 20px;
     border-top: 1px solid #e18298;
     border-bottom: 1px solid #e18298;
