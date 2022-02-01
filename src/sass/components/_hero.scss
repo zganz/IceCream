@@ -5,14 +5,14 @@
   }
 }
 .container__hero {
-  padding: 193px 82px 160px 20px;
+  padding: 189px 82px 160px 20px;
   position: relative;
   overflow: hidden;
   @media (min-width: 768px) {
     padding: 102px 34px 27px 34px;
   }
   @media (min-width: 1280px) {
-    padding: 155px 97px 56px 115px;
+    padding: 165px 97px 56px 115px;
   }
 }
 
@@ -45,9 +45,33 @@
     font-size: 58px;
   }
 }
+.main__list {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  margin-top: 19px;
+  @media (min-width: 768px) {
+    margin-top: 8px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 9px;
+  }
+}
+.main__items {
+  // display: inline-block;
+  // padding: 8px 15px;
+  cursor: pointer;
+  &:not(:first-child) {
+    margin-left: 8px;
+    @media (min-width: 1280px) {
+      margin-left: 15px;
+    }
+  }
+}
 .hero__link {
   display: inline-block;
-  margin-top: 19px;
+  // margin-top: 19px;
   padding: 8px 15px;
 
   font-family: $second-font;
@@ -58,13 +82,13 @@
   text-align: center;
 
   border-radius: 20px;
-  @media (min-width: 768px) {
-    margin-top: 8px;
-  }
+  // @media (min-width: 768px) {
+  //   margin-top: 8px;
+  // }
   @media (min-width: 1280px) {
     font-size: 14px;
     padding: 11px 20px;
-    margin-top: 25px;
+    // margin-top: 25px;
   }
 }
 .hero__link--products {
@@ -78,8 +102,8 @@
   }
 }
 .hero__link--howMade {
-  margin-left: 8px;
-  cursor: pointer;
+  // margin-left: 8px;
+  // cursor: pointer;
   color: $active-color;
   background-color: $white-color;
 
@@ -94,10 +118,8 @@
   position: relative;
   z-index: 3;
   @media (min-width: 768px) {
-    & div {
-      display: flex;
-      justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
   }
 }
 .hero__circle {
@@ -170,6 +192,7 @@
   }
 
   .items__rate {
+    display: block;
     font-family: $main-font;
     font-style: normal;
     font-weight: normal;
@@ -231,9 +254,9 @@
     display: block;
     margin-top: 66px;
     margin-left: 120px;
-    width: 114px;
-    height: 48px;
-    overflow: hidden;
+    max-width: 114px;
+    // height: 48px;
+    // overflow: hidden;
 
     font-family: $second-font;
     font-style: normal;
@@ -243,8 +266,8 @@
     color: $white-color;
   }
   @media (min-width: 1280px) {
-    width: 200px;
-    height: 78px;
+    max-width: 200px;
+    // height: 78px;
     font-size: 14px;
     margin-top: 112px;
     margin-left: 180px;
