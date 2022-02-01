@@ -42,9 +42,7 @@
   }
 }
 .footer-text {
-  display: inline-block;
-
-  padding-bottom: 17px;
+  display: block;
 
   font-family: Titan One, cursive;
   font-size: 18px;
@@ -54,7 +52,6 @@
   color: $icon-color;
   @media screen and (min-width: 768px) {
     padding-right: 16%;
-    padding-bottom: 16px;
 
     font-size: 26px;
     line-height: 1.15;
@@ -62,13 +59,13 @@
   }
   @media screen and (min-width: 1280px) {
     padding-right: 0;
-    padding-bottom: 15px;
     font-size: 30px;
     line-height: 1.13;
   }
 }
 
 .footer-text-accent {
+  display: block;
   margin-top: 17px;
   padding-right: 29%;
   font-size: 34px;
@@ -77,11 +74,13 @@
   color: $active-color;
 
   @media screen and (min-width: 768px) {
+    margin-top: 16px;
     font-size: 48px;
     letter-spacing: 0.06em;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-top: 15px;
     font-size: 58px;
     line-height: 1.14;
     padding-right: 0;
@@ -101,13 +100,9 @@
 
 .footer-socials {
   display: flex;
-  padding-left: 33%;
+  justify-content: flex-end;
   padding-top: 4px;
   padding-bottom: 4px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 30%;
-  }
   margin-bottom: 46px;
 }
 
