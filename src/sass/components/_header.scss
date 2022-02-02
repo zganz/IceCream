@@ -84,7 +84,7 @@ body {
 
 .mobile__menu {
   @media (max-width: 1279px) {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 22%;
     z-index: 5;
@@ -98,7 +98,8 @@ body {
       display: none;
     }
     @media (max-width: 767px) and (orientation: landscape) {
-      height: 600px;
+      height: 700px;
+      position: absolute;
     }
 
     @media (min-width: 768px) {
