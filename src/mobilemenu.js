@@ -21,7 +21,8 @@
   const nav = document.querySelector(".nav__list");
   nav.addEventListener("click", function(ev){
     document.querySelector('.mobile__menu').classList.add("is-hidden");
-    document.body.classList.remove('menu-open')
+    document.body.classList.remove('menu-open');
+    
     document.querySelector('.hero').classList.toggle("menu-is-open");
     document.querySelector('.backdrop').classList.toggle("menu-is-close");
   });
